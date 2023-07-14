@@ -1,0 +1,87 @@
+.character{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 1;
+    height: 740px;
+    width: 1465px;
+    max-width: 1920px;
+    border-top: black solid 5px;
+    background-image: url(../image/charback2.jpg);
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.reader1{
+    margin-top: 20px;
+    margin-left:170px;
+    height: 450px;
+    width: 670px;
+}
+.reader1 h1{
+    font-size: 60px;
+}
+.reader1 h4{
+    font-size: 30px;
+}
+.reader1 p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.char{
+    position: relative;
+    height: 500px;
+    width: 1380px;
+    left: 50px;
+    top: -15px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(3px);
+    overflow: hidden;
+}
+.charb1{
+    /* transform: rotateX(10deg); */
+    box-shadow: 0 0 20px 1px;
+    position: absolute;
+    top: 10px;
+    left: 625px;
+    height: 450px;
+    width: 600px;
+    /* background-color: white; */
+    background-image: url(../image/IMG_1-1b.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 1s;
+    transform-style: flat;
+    transform-origin: bottom;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.charb1:hover{
+    transform: rotateX(60deg);
+}
+.chara1{
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    left: 725px;
+    height: 250px;
+    width: 150px;
+}
+.chara1:hover~.charb1{
+    transform: rotateX(60deg);
+}
+.char:hover .charb1{
+    transform: rotateX(60deg);
+}
+.aim{
+    position: relative;
+    transition: all 0.5s;
+    opacity: 1;
+    perspective: 600px;
+    right: 0px;
+    left: 0px;
+}

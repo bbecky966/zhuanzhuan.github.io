@@ -1,0 +1,75 @@
+.music{
+    background-image: url(../image/storyback.jpg);
+    background-position: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 1;
+    background-color: white;
+    height: 500px;
+    width: 1465px;
+    max-width: 1920px;
+    text-align: center;
+    border-top: black solid 5px;
+}
+.title{
+    position: relative;
+    text-align: center;
+    left: 582px;
+    width: 300px;
+    height: 150px;
+    font-size: 40px;
+    line-height: 125px;
+    background-image: url(../image/title.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.song{
+    float: left;
+    width: 200px;
+    height: 235px;
+    margin-top: 20px;
+    margin-left: 35px;
+    background-color: gray;
+    transition: all 1s;
+    overflow: hidden;
+    border-radius: 100px 100px 0 0;
+    box-shadow: 0 0 20px 1px black;
+}
+.songimg{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 100px;
+    border: black solid 2px;
+    transition: all 2s;
+}
+.song li{
+    text-align: left;
+    margin-top: 6px;
+    margin-left: 10px;
+    color: white;
+    font-size: 17px;
+}
+.song:hover{
+    height: 293px;
+}
+.song:hover .songimg{
+    transform: rotate(360deg);
+}
+.sp:hover{
+    height: 315px;
+}
+.songw audio{
+    float: right;
+    margin-right: 10px;
+    margin-top: -30px;
+    height: 20px;
+    width: 20px;
+    font-size: 0px;
+}

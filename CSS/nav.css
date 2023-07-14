@@ -1,0 +1,78 @@
+a{
+    color: white;
+    list-style: none;
+}
+.nav{
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.80);
+    float: left;
+    position: fixed;
+    height: 50px;
+    width: 100vw;
+    color: white;
+    list-style: none;
+}
+.nav1{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    transition: all 1s;
+    color: white;
+    list-style: none;
+}
+.nav1:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.id{
+    float: right;
+    width: 100px;
+}
+.exit{
+    float: right;
+    width: 100px;
+}
+.navs{
+    display: block;
+    float: left;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: "icomoon";
+}
+/* 这里是搜索框 */
+.searchBox{
+    margin-left: 20px;
+    display: block;
+    float: left;
+    width: 236px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+}
+.search{
+    margin-left: 13px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 20px;
+    margin-top: 7px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.nav2{
+    float: right;
+    width: 200px;
+}
+.nimg{
+    margin-left: 20px;
+    float: left;
+    height: 50px;
+    margin-right: 50px;
+}

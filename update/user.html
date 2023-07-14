@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="../index.html">点击这里跳回主页</a>
+    <div class="user"></div>
+</body>
+<script>
+    let user = JSON.parse(localStorage.getItem("user"));
+    console.log(user);
+    const body = document.querySelector('.user');
+
+    function render(){
+        user = JSON.parse(localStorage.getItem("user"));
+        let str = "";
+        for (let i = user.length - 1; i >= 0; i--) {
+            str += `
+                <div>用户名：${user[i].username}密码：${user[i].password}</div><button id=${i}>删除</button> 
+            `;
+        }
+        body.innerHTML = str;
+    }
+    render();
+
+    body.onclick = function (e) {
+        if (e.target.localName === "button") {
+            let i = e.target.id;
+            user.splice(i, 1);
+            localStorage.setItem("user", JSON.stringify(user));
+            render();
+        }
+    };
+</script>
+</html>

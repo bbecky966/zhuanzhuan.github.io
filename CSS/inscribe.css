@@ -1,0 +1,38 @@
+.inscribe{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 1465px;
+    max-width: 1920px;
+    height: 80px;
+    background-color: black;
+    border-top: white solid 3px;
+    color: white;
+    text-align: center;
+}
+.inscribe a{
+    text-decoration: none;
+    border-bottom: solid 3px black;
+    transition: all .5s;
+}
+.inscribe a:hover{
+    border-bottom: solid 3px white;
+}
+.writer{
+    margin-top: 20px;
+    float: left;
+    margin-left: 350px;
+    font-size: 20px;
+}
+.iimg{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.navd{
+    margin-top: 20px;
+    float: left;
+    margin-left: 300px;
+    font-size: 20px;
+}
