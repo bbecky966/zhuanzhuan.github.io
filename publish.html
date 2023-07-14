@@ -10,6 +10,14 @@
 <script type="text/javascript" src="js/cufon-yui.js"></script>
 <script type="text/javascript" src="js/arial.js"></script>
 <script type="text/javascript" src="js/cuf_run.js"></script>
+
+<script type="module">
+  import { Toast } from 'bootstrap.esm.min.js'
+
+  Array.from(document.querySelectorAll('.toast'))
+    .forEach(toastNode => new Toast(toastNode))
+</script>
+
 <!-- CuFon ends -->
 </head>
 <body>
@@ -21,7 +29,7 @@
     <div class="menu_nav">
       <ul>
         <li class="active"><a href="index.html">主页</a></li>
-
+    
         <li><a href="about.html">关于我们</a></li>
         <li><a href="contact.html">联系我们</a></li>
         <li><a href="signin.html">【登录】</a></li>
@@ -42,22 +50,25 @@
   <div class="content">
       <div class="mainbar">
         <div class="article">
-          <h2><span>支持</span></h2><div class="clr"></div>
-          我们是面向所有中传学子的非官方非盈利为目的的闲置物交易平台，目的是为了让大家在出物时能够匹配到合适的继任。规避了朋友圈出物时不能交流的阻碍，让大家能在出物时感受对方的真诚。</br><strong>前六位支持者会荣登我们的支持榜单，每周更新。</br></strong>如果想要支持我们可以添加相关联系方式（下方链接），感谢大家一路陪伴！</p>
-          <ul class="sb_menu">
-            <li><a href="#"><strong>支持我们 •̀֊•́  感谢金主们</strong></a></li>
-
-          </ul>
-
+          <h2><span>注意</span></h2><div class="clr"></div>
+          <p>发布内容时请注意以下网站规则</p>
         </div>
         <div class="article">
-          <h2><span>欢迎发邮件</span> 戳我们</h2><div class="clr"></div>
+          <h2><span>发布内容</span> </h2><div class="clr"></div>
           <form action="#" method="post" id="sendemail">
           <ol><li>
-            <label for="name">名字（必填）</label>
+
+            <div class="card" style="width: 18rem;">
+              <img src="images/picture.jpg" class="card-img-top" alt="images/picture.jpg">
+              <div class="card-body">
+                <p class="card-text"> <a href="#">导入图片</a></p>
+              </div>
+            </div>
+
+            <label for="name">标题（必填）</label>
             <input id="name" name="name" class="text" />
           </li><li>
-            <label for="email">邮箱地址（必填）</label>
+            <label for="email">#标签（至少填一项）</label>
             <input id="email" name="email" class="text" />
           </li><li>
             <label for="message">内容</label>
@@ -66,6 +77,9 @@
             <input type="image" name="imageField" id="imageField" src="images/submit.gif" class="send" />
             <div class="clr"></div>
           </li></ol>
+
+
+
           </form>
         </div>
       </div>

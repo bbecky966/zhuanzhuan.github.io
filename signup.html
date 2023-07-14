@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="CSS/signup.css">
+    <style>
+        /* 全局设置 */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 字体引入 */
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('fonts/icomoon.eot?y44ybz');
+            src:  url('fonts/icomoon.eot?y44ybz#iefix') format('embedded-opentype'),
+            url('fonts/icomoon.ttf?y44ybz') format('truetype'),
+            url('fonts/icomoon.woff?y44ybz') format('woff'),
+            url('fonts/icomoon.svg?y44ybz#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup1">
+        <div class="popcon">
+            <h3>注册成功</h3>
+            <img src="images/p1.jpg">
+            <div class="check">确认</div>
+        </div>
+    </div>
+    <div class="popup2">
+        <div class="popcon">
+            <h3>你有必填项(<span style="color: red;">*</span>)出错或未填哦</h3>
+            <img src="images/p2.jpg">
+            <div class="check">确认</div>
+        </div>
+    </div>
+    <div class="log">
+        <div class="left">
+            <p>Welcome</p>
+            <p>To</p>
+            <p>ZHUAN</p>
+            <img class="pic" src="images/signup.jpg"/>
+            <img class="logo" src="images/logo.png"/>
+        </div>
+        <div class="right">
+            <h1>Nice To Meet You</h1>
+            <div class="login">
+                <div class="user"><span>Username<span class="r">*</span>:</span><span class="test test1"></span><br><input type="text" name="Username"></div>
+                <div class="pass"><span>Password<span class="r">*</span>:</span><span class="test test2"></span><br><input type="password" name="Password"></div>
+                <div class="pass"><span>E-mail:</span><br><input type="text" name="E-mail"></div>
+                <div class="pass"><span>PhoneNumber:</span><br><input type="text" name="PhoneNumber"></div>
+                <div class="pass"><span>VerificationCode<span class="r">*</span>:</span></span><span class="test test3"></span><span class="code">Get Code</span><br><input type="text" name="VerificationCode"></div>
+            </div>
+            <p class="signup">Already have an account? <a href="signin.html">Sign in</a></p>
+            <a href="#"><h2>SIGN UP</h2></a>
+        </div>
+        <a class="return" href="index.html" title="返回主页"></a>
+    </div>
+</body>
+<script type="text/javascript" src="js/signup.js"></script>
+</html>

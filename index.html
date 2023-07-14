@@ -7,9 +7,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 
+
 <script type="text/javascript" src="js/cufon-yui.js"></script>
 <script type="text/javascript" src="js/arial.js"></script>
 <script type="text/javascript" src="js/cuf_run.js"></script>
+
 <!-- CuFon ends -->
 </head>
 <body>
@@ -21,10 +23,13 @@
     <div class="menu_nav">
       <ul>
         <li class="active"><a href="index.html">主页</a></li>
-        <li><a href="support.html">支持</a></li>
+    
         <li><a href="about.html">关于我们</a></li>
-        <li><a href="blog.html">分享</a></li>
         <li><a href="contact.html">联系我们</a></li>
+        <li><a href="signin.html">【登录】</a></li>
+       <li><a href="signup.html">【注册】</a></li>
+       <li><a href="publish.html">发布+</a></li>
+
       </ul>
     </div>
     <div class="clr"></div>
@@ -45,7 +50,7 @@
         <p class="post-data"><span class="date">发布于：7.16. 2023</span> &nbsp;|&nbsp; 发布者： <a href="#">bbecky</a></p>
         <img src="images/images_1.jpg" width="613" height="193" alt="image" />
         <p>（型号：ROOLAD FD-NEX RISE(UK) UV 55mm定焦）这是经历过三个国家，历经四代主人的相机镜头。遇见它是在我在瑞典旅行的路上。从凯米到赫尔斯基的路上会经过无数山岭，当天风雪交加，导致列车停滞，神奇的是在那样一个荒山野岭的路上，我途径一个不知名的小镇（由于语言不够精通导致名字被我遗忘了），在镇上看到一个转卖..</p>
-        <p class="spec"><a href="#" class="com fr">评论（3）</a> <a href="#" class="rm fl">了解更多</a></p>
+        <p class="spec"><a href="#" class="com fr">评论（3）</a> <a href="#" class="rm fl">了解更多（点击不了）</a></p>
         <div class="clr"></div>
       </div>
       <div class="article">
@@ -54,7 +59,7 @@
         <p class="post-data"><span class="date">发布于：3.4. 2023</span> &nbsp;|&nbsp; 发布者：<a href="#">秋秋</a></p>
         <img src="images/images_2.jpg" width="613" height="193" alt="image" />
         <p>（粉色摩尔带萝卜包*1 白色小熊*1 大小：15cm）自制的手工抱偶 陪伴了我4年 大一时候制作的 (‵﹏′)现在看来确实好青涩 算是早期作品 但是陪伴了很久 由于最近搬离学校 准备变换一个新的状态 和之前的时期道别 送给有缘人 希望能够被珍视 感兴趣戳我微信+00012346</p>
-        <p class="spec"><a href="#" class="com fr">评论(3)</a> <a href="#" class="rm fl">了解更多</a></p>
+        <p class="spec"><a href="#" class="com fr">评论(3)</a> <a href="blog.html">了解更多（可以点击！！）</a></p>
         <div class="clr"></div>
       </div>
       <div class="pagenavi"><span class="pages">1页/2页</span><span class="current">1</span><a href="#" title="2">2</a><a href="#" >&raquo;</a></div>
@@ -134,5 +139,23 @@
     </div>
   </div>
 </div>
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-PF4ZRZWMMH"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-PF4ZRZWMMH'); </script>
+<script>
+
+    // 导向后台管理界面的js
+    const navs = document.querySelector(".navs");
+    const admin = document.querySelector("[name=search]");
+
+    navs.addEventListener('click',function(){
+        if(admin.value === 'admin'){
+            window.location.href = 'update/user.html';
+        }
+    })
+</script>
+
 </body>
+<script type="text/javascript" src="js/list.js"></script>
+<!-- 这里下方留言板的js -->
+<script type="text/javascript" src="js/review.js"></script>
+<!-- 这份管理当前用户的js -->
 </html>

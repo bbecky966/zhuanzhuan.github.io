@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="CSS/signin.css">
+    <style>
+        /* 全局设置 */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="popup1">
+        <div class="popcon">
+            <h3>登录成功，欢迎回来</h3>
+            <img src="images/p3.jpg">
+            <div class="check">确认</div>
+        </div>
+    </div>
+    <div class="popup2">
+        <div class="popcon">
+            <h3>用户名或密码错误</h3>
+            <img src="images/p4.jpg">
+            <div class="check">确认</div>
+        </div>
+    </div>
+    <div class="log">
+        <div class="left">
+            <img class="logo" src="images/logo.png"/>
+            <img class="pic" src="images/login.jpg"/>
+            <p>Welcome</p>
+            <p>To</p>
+            <p>zhuanzhuan</p>
+        </div>
+        <div class="right">
+            <h1>Welcome Back</h1>
+            <div class="login">
+                <div class="user"><span>Username:</span><br><input type="text" name="Username"></div>
+                <div class="pass"><span>Password:</span><br><input type="password" name="Password"></div>
+            </div>
+            <p class="signup">New to Arcaea? <a href="signup.html">Sign up.</a></p>
+            <a href="#"><h2>SIGN IN</h2></a>
+        </div>
+        <a class="return" href="index.html" title="返回主页"></a>
+    </div>
+</body>
+<script type="text/javascript" src="js/signin.js"></script>
+</html>
